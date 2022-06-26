@@ -1,5 +1,5 @@
 {
-  "name": "woof",
+  "name": "@taranek/my-js-playground",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -73,8 +73,5 @@
   },
   "resolutions": {
     "@types/react": "17.0.1"
-  },
-  "prisma": {
-    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
   }
 }
