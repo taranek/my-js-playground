@@ -32,13 +32,6 @@ module.exports = {
     'arrow-body-style': 'off',
     'prefer-arrow-callback': 'off',
     'react/jsx-filename-extension': 'off',
-    'react/function-component-definition': [
-      'error',
-      {
-        namedComponents: 'arrow-function',
-        unnamedComponents: 'arrow-function',
-      },
-    ],
     'prettier/prettier': 'warn',
   },
 }
