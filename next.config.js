@@ -46,4 +46,13 @@ module.exports = withTM({
     }
     return config
   },
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/editor',
+        permanent: true,
+      },
+    ]
+  },
 })
