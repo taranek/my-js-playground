@@ -1,6 +1,6 @@
 # my-js-playground
 
-_I always wondered how live HTML+CSS+JS editors work, so I just built one by myself_
+_I always wondered how HTML+CSS+JS editors work, so I just built one by myself_
 
 ### Live demo
 
