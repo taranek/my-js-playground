@@ -15,10 +15,7 @@ const MainEditor = () => {
   const [scripts, setScripts] = React.useState('')
   const [html, setHTML] = React.useState('')
   return (
-    <SplitPane
-      split="vertical"
-      minSize={50}
-    >
+    <SplitPane split="vertical" minSize={50}>
       <S.ShadowDomContainer>
         <ShadowDom styles={css} scripts={scripts} html={html} />
       </S.ShadowDomContainer>
