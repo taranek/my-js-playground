@@ -1,7 +1,4 @@
-import ReactShadowRoot from 'react-shadow-root'
 import React from 'react'
-import parse from 'html-react-parser'
-import executeWithErrorHandling from '../editors/EditorErrorBoundary/EditorErrorBoundary'
 import { useIframe } from '../../hooks/useIframe'
 import { useDebounce } from 'react-use'
 
