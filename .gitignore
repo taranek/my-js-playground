@@ -104,3 +104,6 @@ dist
 .tern-port
 .idea/
 *.env
+pages-manifest.json
+font-manifest.json
+*.nft.json
