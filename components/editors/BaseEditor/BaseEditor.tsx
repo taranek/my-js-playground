@@ -3,7 +3,6 @@ import { useResizeDetector } from 'react-resize-detector'
 import dynamic from 'next/dynamic'
 import * as S from './BaseEditor.styles'
 
-// @ts-expect-error TODO: fix the type later
 const MonacoEditor = dynamic(import('react-monaco-editor'), { ssr: false })
 
 type EditorLanguage = 'javascript' | 'css' | 'html'
