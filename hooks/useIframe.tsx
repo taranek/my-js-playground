@@ -1,9 +1,15 @@
 import * as React from 'react'
-export function useIframe(iframeRef: React.RefObject<HTMLIFrameElement>) {
+export function useIframe(
+  iframeRef: React.RefObject<HTMLIFrameElement>,
+  onError?: OnErrorEventHandler
+) {
   const [iframeElement, setIframeElement] = React.useState(iframeRef.current)
   React.useEffect(() => {
     setIframeElement(iframeRef.current)
-  }, [iframeRef?.current])
+    if (onError && iframeElement?.contentWindow) {
+      iframeElement.contentWindow.onerror = onError
+    }
+  }, [iframeRef?.current, onError])
 
   const updateCss = React.useCallback(
     (css: string) => {

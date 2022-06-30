@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 export const Container = styled.div`
   display: flex;
   width: 100%;
-  background: red;
+  background: #1e1e1e;
 `
 
 export const ShadowDomContainer = styled.div`

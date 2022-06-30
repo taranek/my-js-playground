@@ -1,6 +1,6 @@
 import React from 'react'
 import { SplitPane } from 'react-multi-split-pane'
-import ShadowDom from '../../shadowDom/ShadowDom'
+import BrowserEmulator from '../../BrowserEmulator/BrowserEmulator'
 import { BaseEditorProps } from '../BaseEditor/BaseEditor'
 import * as S from './MainEditor.styles'
 import loadable from 'react-loadable-visibility/loadable-components'
@@ -17,7 +17,7 @@ const MainEditor = () => {
   return (
     <SplitPane split="vertical" minSize={50}>
       <S.ShadowDomContainer>
-        <ShadowDom styles={css} scripts={scripts} html={html} />
+        <BrowserEmulator styles={css} scripts={scripts} html={html} />
       </S.ShadowDomContainer>
       <SplitPane split="horizontal">
         <S.Container>
