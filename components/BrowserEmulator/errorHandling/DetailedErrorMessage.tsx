@@ -11,10 +11,12 @@ export const DetailedErrorMessage = ({ error }: Props) => {
     return null
   }
   return (
-    <div style={{ padding: '8px 12px', display: 'flex', flexDirection: 'column' }}>
+    <div
+      style={{ padding: '8px 12px', display: 'flex', flexDirection: 'column' }}
+    >
       <ErrorMessage>{error?.message}</ErrorMessage>
       {stackTrace?.split('\n').map((l) => (
-        <StackTraceLine>{l}</StackTraceLine>
+        <StackTraceLine key={l}>{l}</StackTraceLine>
       ))}
     </div>
   )
