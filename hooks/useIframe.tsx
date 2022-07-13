@@ -9,7 +9,7 @@ export function useIframe(
     if (onError && iframeElement?.contentWindow) {
       iframeElement.contentWindow.onerror = onError
     }
-  }, [iframeRef?.current, onError])
+  }, [iframeRef, iframeElement, onError])
 
   const updateCss = React.useCallback(
     (css: string) => {
@@ -58,7 +58,7 @@ export function useIframe(
       updateCss(css)
       updateScripts(js)
     },
-    [updateScripts, updateCss, updateHtml]
+    [updateScripts, updateCss, updateHtml, iframeElement]
   )
   return {
     updateIframeDOM,

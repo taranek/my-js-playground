@@ -2,10 +2,10 @@
 
 _I always wondered how HTML+CSS+JS editors work, so I just built one by myself_
 
-### Live demo
+## Live demo
 
 https://my-js-playground-taranek.vercel.app
 
-### Credits
+## Credits
 
 - Adrien Jarthon for creating [awesome CSS browser mockups](https://codepen.io/adrienjarthon/pen/ogjjoj) I used in this project.
