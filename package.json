@@ -49,6 +49,7 @@
     "react-ssr-error-boundary": "^1.0.1",
     "reset-css": "^5.0.1",
     "stacktracey": "^2.1.8",
+    "superjson": "^1.9.1",
     "swr": "^1.1.1"
   },
   "devDependencies": {
